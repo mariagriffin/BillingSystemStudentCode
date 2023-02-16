@@ -1,6 +1,3 @@
-
-
-
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
@@ -18,6 +15,10 @@ import java.awt.event.ActionEvent;
 import java.awt.Color;
 
 public class Invoice extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField name;
 	private JTextField pID;
 	private JTextField pQuan;
@@ -55,7 +56,6 @@ public class Invoice extends JPanel {
 			
 			@Override
 			public void itemStateChanged(ItemEvent arg0) {
-				// TODO Auto-generated method stub
 				if(cType.getSelectedIndex()==1)
 				{
 					lblName.setVisible(true);

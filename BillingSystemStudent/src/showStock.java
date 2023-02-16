@@ -8,16 +8,11 @@ import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
-import javax.swing.JPasswordField;
 import javax.swing.JTable;
 import javax.swing.JComboBox;
 import java.awt.event.ActionListener;
@@ -25,6 +20,10 @@ import java.awt.event.ActionEvent;
 import java.awt.Color;
 
 public class showStock extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTable stockTable;
 	JComboBox<String> comp;
 	DefaultTableModel model;

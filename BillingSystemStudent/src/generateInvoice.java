@@ -1,5 +1,3 @@
-
-
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -16,6 +14,10 @@ import java.awt.Toolkit;
 
 public class generateInvoice extends JFrame implements ActionListener{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	int jp;
 	ArrayList<JPanel> panels=new ArrayList<JPanel>();
@@ -77,7 +79,6 @@ public class generateInvoice extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		if(e.getActionCommand().equals("Search Product"))
 		{
 			this.remove(panels.get(jp));

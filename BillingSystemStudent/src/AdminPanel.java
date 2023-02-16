@@ -12,6 +12,10 @@ import java.awt.Toolkit;
 
 
 public class AdminPanel extends JFrame implements ActionListener {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JMenuItem itmAddProduct;
 	JMenu mnProduct;
 	JMenuItem itmUpdateProduct;

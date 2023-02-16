@@ -14,6 +14,10 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class Sale extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTable sale;
 	private JTextField date;
 	JComboBox<String> comp ;

@@ -2,11 +2,7 @@ import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import java.awt.Color;
@@ -15,12 +11,17 @@ import java.awt.event.ActionEvent;
 
 public class addCashier extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JTextField userField;
 	JButton btnAddCashier;
 	private JPasswordField passwordField;
 	private JLabel error;
 	String err="Enter username and passowrd";
-	String user,pass;
+	String user;
+	String pass;
 	/**
 	 * Create the panel.
 	 */

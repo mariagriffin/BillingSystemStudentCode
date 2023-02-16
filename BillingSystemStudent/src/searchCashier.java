@@ -4,8 +4,6 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Color;
 import java.awt.event.ActionListener;
@@ -13,6 +11,10 @@ import java.awt.event.ActionEvent;
 
 public class searchCashier extends JPanel {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JTextField idField;
 	JButton btnUpdateProduct;
 	private JLabel error;
@@ -42,7 +44,7 @@ public class searchCashier extends JPanel {
 		btnUpdateProduct.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				if(idField.getText().equals(""))
+				if(idField.getText() == "")
 				{
 					error.setText(err);
 				}

@@ -39,7 +39,6 @@ public class DB {
 			JOptionPane.showMessageDialog(null, "Product added to database");
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -56,7 +55,6 @@ public class DB {
 		    	JOptionPane.showMessageDialog(null,  "ProductID not found!");
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -75,7 +73,6 @@ public class DB {
 		    	JOptionPane.showMessageDialog(null,  "ProductID not found!");
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -94,7 +91,6 @@ public class DB {
 		        
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -112,7 +108,6 @@ public class DB {
 		        
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -131,7 +126,6 @@ public class DB {
 		        
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -146,7 +140,6 @@ public class DB {
 			JOptionPane.showMessageDialog(null, "Cashier added to database");
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -163,7 +156,6 @@ public class DB {
 			    	JOptionPane.showMessageDialog(null,  "Cashier not found!");
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -193,7 +185,6 @@ public class DB {
 		        
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -214,7 +205,6 @@ public class DB {
 			}
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
@@ -298,7 +288,6 @@ public class DB {
 					
 			}
 		        
-			conn.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
@@ -345,7 +334,6 @@ public class DB {
 			}
 			conn.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
 		}
