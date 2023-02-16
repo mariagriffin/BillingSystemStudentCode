@@ -15,19 +15,12 @@ public class DB {
 	public static Connection DBConnection()
 	{
 		Connection conn = null;
-		try
-		{
+		
 			Class.forName("com.mysql.jdbc.Driver");
 		
 			conn = DriverManager.getConnection("jdbc:mysql://localhost/caddey","root", "");
 			System.out.print("Database is connected !");
 			
-		}
-		catch(Exception e)
-		{
-			JOptionPane.showMessageDialog(null, "Do not connect to DB - Error:"+e);
-		
-		}
 		return conn;
 	}
 	public static void addProductToDB(String id,String detail,String comp,int quan)
@@ -203,7 +196,7 @@ public class DB {
 				statement.executeUpdate("INSERT INTO sale VALUES ('"+data[x]+"','"+comp.get(0)+"','"+d+"','"+data[x+3]+"',"+data[x+4]+",'"+name+"');");
 				comp.remove(0);
 			}
-			conn.close();
+			
 		} catch (SQLException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
