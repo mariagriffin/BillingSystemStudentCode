@@ -19,7 +19,7 @@ import java.awt.Toolkit;
 public class Login extends JFrame {
 
 	/**
-	 * 
+	 * setup
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
