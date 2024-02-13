@@ -18,7 +18,7 @@ public class DB {
 		
 			Class.forName("com.mysql.jdbc.Driver");
 		
-			conn = DriverManager.getConnection("jdbc:mysql://localhost/caddey","root", "");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/mySecureDB","root", "");
 			System.out.print("Database is connected !");
 			
 		return conn;
