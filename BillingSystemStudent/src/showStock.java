@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -74,9 +73,11 @@ public class showStock extends JPanel {
 		JButton btnExportToExcel = new JButton("Export to Excel");
 		btnExportToExcel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+
 				toExcel(stockTable, new File("availableStock.xls"));
 				JOptionPane.showMessageDialog(null, "Export file created");
 			}
+
 		});
 		btnExportToExcel.setBounds(605, 525, 138, 23);
 		add(btnExportToExcel);

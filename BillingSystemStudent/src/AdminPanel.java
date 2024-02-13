@@ -39,7 +39,7 @@ public class AdminPanel extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public AdminPanel() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("F:\\Working Directory\\fianl project with sql\\Bill\\logo.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\\\Users\\\\Maria.Griffin\\\\OneDrive - Atlantic TU\\\\Documents\\\\ATU_Image.png"));
 		setTitle("Admin Panel");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 840, 619);

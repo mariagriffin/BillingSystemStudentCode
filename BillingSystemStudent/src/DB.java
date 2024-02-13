@@ -105,13 +105,18 @@ public class DB {
 			e.printStackTrace();
 		}
 	}
-	public static boolean varifyLogin(String email,String pass)
+
+
+	public static boolean verifyLogin(String email,String pass)
 	{
 		boolean login=false;
 		Connection conn=DBConnection();
+
 		try {
 			Statement statement = conn.createStatement();
-			ResultSet rs = statement.executeQuery("Select * from users WHERE Email = '"+email+"' and Password = '"+pass+"';");
+
+			ResultSet rs = statement.executeQuery("Select * from users WHERE Email = '" +email+ "' and Password = '" +pass+ "';");
+
 			if (!rs.next()) 
 				login=false;
 			else
@@ -124,6 +129,8 @@ public class DB {
 		}
 		return login;
 	}
+
+
 	public static void addCashier(String user,String pass)
 	{
 		Connection conn=DBConnection();

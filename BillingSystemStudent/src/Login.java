@@ -9,8 +9,6 @@ import java.awt.Font;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import javax.swing.ImageIcon;
@@ -28,7 +26,7 @@ public class Login extends JFrame {
 	private String password,username;
 	private JLabel error;
 	private String errorText="Invalid user name or password!";
-	private JLabel lblCaddeyLogin;
+	private JLabel lblATULogin;
 	JButton btnLogin;
 	private JLabel label;
 
@@ -36,19 +34,12 @@ public class Login extends JFrame {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-//		if(!getMac().equals("90-48-9A-AC-21-17"))
-	//	{
-		//	JOptionPane.showMessageDialog(null,"Unknown Computer, Can not run!");
-			//return;
-//		}
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
-				try {
-//					Process process = Runtime.getRuntime().exec("E:\\xampp\\apache_start.bat");
-	//				Process process2 = Runtime.getRuntime().exec("E:\\xampp\\mysql_start.bat");
+				try {		
+					Login frame = new Login();					
+					frame.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Maria.Griffin\\OneDrive - Atlantic TU\\Documents\\ATU_Image.png"));
 					
-					Login frame = new Login();
-					frame.setIconImage(Toolkit.getDefaultToolkit().getImage("F:\\Working Directory\\fianl project with sql\\Bill\\logo.png"));
 					frame.setVisible(true);
 					
 				} catch (Exception e) {
@@ -119,7 +110,7 @@ public class Login extends JFrame {
 					error.setText("");
 					if(username == "admin")
 					{
-						if(DB.varifyLogin(username,password))
+						if(DB.verifyLogin(username,password))
 							{
 								error.setText("");
 								AdminPanel p=new AdminPanel();
@@ -130,7 +121,7 @@ public class Login extends JFrame {
 					}
 					else
 					{
-						if(DB.varifyLogin(username,password))
+						if(DB.verifyLogin(username,password))
 						{
 							error.setText("");
 							generateInvoice g=new generateInvoice();
@@ -151,38 +142,17 @@ public class Login extends JFrame {
 		error.setBounds(104, 236, 220, 14);
 		contentPane.add(error);
 		
-		lblCaddeyLogin = new JLabel("Caddey Login");
-		lblCaddeyLogin.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblCaddeyLogin.setBounds(204, 26, 167, 28);
-		contentPane.add(lblCaddeyLogin);
+		lblATULogin = new JLabel("ATU Login");
+		lblATULogin.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblATULogin.setBounds(294, 26, 167, 28);
+		contentPane.add(lblATULogin);
 		
 		label = new JLabel("");
-		label.setIcon(new ImageIcon("E:\\XAMPP\\htdocs\\logo.png"));
-		label.setBounds(10, 11, 167, 91);
+		label.setIcon(new ImageIcon("C:\\\\Users\\\\Maria.Griffin\\\\OneDrive - Atlantic TU\\\\Documents\\\\ATU_Image.png"));
+		label.setBounds(10, 11, 197, 91);
 		contentPane.add(label);
 		
 		
-	}
-	public static String getMac()
-	{
-		InetAddress ip;
-		String mc="";
-
-			ip = InetAddress.getLocalHost();
-			NetworkInterface network = NetworkInterface.getByInetAddress(ip);
-
-			byte[] mac = network.getHardwareAddress();
-
-			StringBuilder sb = new StringBuilder();
-			for (int i = 0; i < mac.length; i++) {
-				sb.append(String.format("%02X%s", mac[i], (i < mac.length - 1) ? "-" : ""));
-			}
-		
-			mc= sb.toString();
-
-		return mc;
-		
-	
 	}
 	
 }
